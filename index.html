@@ -26,8 +26,8 @@
                 <p class="text-lg italic text-gray-600">Headwind. You know… like a headstart on tailwind!</p>
             </div>
             <div class="max-w-screen-md mt-12">
-                <p>I'd heard a lot about utility class CSS over the years, but it wasn't until I started playing with Tailwind CSS did I fully realise how simple and scalable a system it was.</p>
-                <p>Headwind is my love-letter to Tailwind and other frontend devs like me. It is intentionally utilitarian and the components it includes are built to demo efficient HTML structure and a functional use of Tailwind. You may use these components as a starting point for your own components and then apply all your pwn amazing style and design on top.</p>
+                <p>I'd heard a lot about utility class CSS over the years, but it wasn't until I started playing with Tailwind CSS did I fully realise how simple and scalable a methodology it was.</p>
+                <p>Headwind is my love-letter to Tailwind and other frontend devs like me. It is intentionally utilitarian and the components it includes are built to demo efficient HTML structure and a functional use of Tailwind. You may use these components as a starting point for your own components and then apply all your own amazing style and design on top.</p>
                 <p>All components adhere to 3 rules. These rules are designed to make the components as simple and accessible as possible.</p>
                 <ol>
                     <li><span class="font-semibold">1. Just the CDN</span> - No custom classes or stlying. Just vanilla Tailwind.</li>
@@ -36,7 +36,7 @@
                 </ol>
                 <p>When you need a component to function in a particular way and be based on efficient use of HTML and Tailwind classes, I hope Headwind can help you out.</p>
                 <p>Cheers!</p>
-                <p>Rob Stinson</p>
+                <p>Rob</p>
                 <div class="flex justify-center mt-24 space-x-2">
                     <div class="w-2 h-2 bg-black rounded-full"></div>
                     <div class="w-2 h-2 bg-black rounded-full"></div>
@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="flex justify-center mt-10">
-            <div style="grid-auto-rows: 1fr;" class="grid w-full max-w-screen-xl grid-cols-3 gap-px bg-black border-t border-b border-l border-black">
+            <div style="grid-auto-rows: 1fr;" class="grid w-full max-w-screen-xl grid-cols-3 gap-px bg-black">
                 <div class="flex flex-col items-center justify-between p-6 bg-white">
                     <h4 class="text-lg font-medium">Button Groups</h4>
                     <!-- Component Start -->
@@ -61,7 +61,7 @@
                         <button class="flex items-center justify-center w-8 h-8 text-sm font-medium bg-white border-l border-black hover:bg-black hover:text-white focus:outline-none">4</button>
                     </div>
                     <!-- Component End  -->
-                    <button class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See more</button>
+                    <a href="https://codepen.io/collection/XpqYVp/?ref=headwind.robstinson" target="_blank"  class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See the Snippets</a>
                 </div>
                 <div class="flex flex-col items-center p-6 bg-white">
                     <h4 class="mb-6 text-lg font-medium">Drop Downs</h4>
@@ -85,7 +85,7 @@
                         </div>
                         <!-- Component End  -->
                     </div>
-                    <button class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See more</button>
+                    <a href="https://codepen.io/collection/XebEzz/?ref=headwind.robstinson" target="_blank"  class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See the Snippet</a>
                 </div>
                 <div class="flex flex-col items-center justify-between p-6 bg-white">
                     <h4 class="text-lg font-medium">Tool Tips</h4>
@@ -102,75 +102,47 @@
                         </div>
                         <!-- Component End  -->
                     </div>
-                    <button class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See more</button>
+                    <a href="https://codepen.io/collection/DyGwjv/?ref=headwind.robstinson" target="_blank"  class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See the Snippets</a>
                 </div>
                 <div class="flex flex-col items-center justify-between p-6 bg-white">
                     <h4 class="text-lg font-medium">Toggle</h4>
                     <div>
                         <!-- Component Start -->
-                        <div class="relative flex flex-col items-center group">
-                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
-                            </svg>
-                            <div class="absolute top-0 flex flex-col items-center hidden mt-6 group-hover:flex">
-                                <div class="w-3 h-3 -mb-2 rotate-45 bg-black"></div>
-                                <span class="relative z-10 p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg">A bottom aligned tooltip.</span>
-                            </div>
-                        </div>
+                        <style>
+                            input[type="checkbox"]:checked + label {
+                                justify-content: flex-end;
+                            }
+                        </style>
+                        <input class="hidden" type="checkbox" id="toggle" value="1">
+                        <label class="flex items-center justify-start w-10 h-6 p-1 border border-black rounded-full cursor-pointer" for="toggle">
+                            <span class="w-4 h-4 bg-black rounded-full"></span>
+                        </label>
                         <!-- Component End  -->
                     </div>
-                    <button class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See more</button>
+                    <a href="https://codepen.io/robstinson/pen/mdPabam/?ref=headwind.robstinson" target="_blank"  class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See the Snippets</a>
                 </div>
                 <div class="flex flex-col items-center justify-between p-6 bg-white">
                     <h4 class="text-lg font-medium">Kanban View</h4>
-                    <div>
-                        <!-- Component Start -->
-                        <div class="relative flex flex-col items-center group">
-                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
-                            </svg>
-                            <div class="absolute top-0 flex flex-col items-center hidden mt-6 group-hover:flex">
-                                <div class="w-3 h-3 -mb-2 rotate-45 bg-black"></div>
-                                <span class="relative z-10 p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg">A bottom aligned tooltip.</span>
-                            </div>
-                        </div>
-                        <!-- Component End  -->
-                    </div>
-                    <button class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See more</button>
+                    <img class="w-4/6 my-2" src="headwind_kanban_tailwind_css.png" alt="">
+                    <a href="https://codepen.io/robstinson/pen/PoNdjOM/?ref=headwind.robstinson" target="_blank"  class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See the Snippet</a>
                 </div>
                 <div class="flex flex-col items-center justify-between p-6 bg-white">
                     <h4 class="text-lg font-medium">Table View</h4>
-                    <div>
-                        <!-- Component Start -->
-                        <div class="relative flex flex-col items-center group">
-                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
-                            </svg>
-                            <div class="absolute top-0 flex flex-col items-center hidden mt-6 group-hover:flex">
-                                <div class="w-3 h-3 -mb-2 rotate-45 bg-black"></div>
-                                <span class="relative z-10 p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg">A bottom aligned tooltip.</span>
-                            </div>
-                        </div>
-                        <!-- Component End  -->
-                    </div>
-                    <button class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See more</button>
+                    <img class="w-4/6 my-2" src="headwind_table_fixed_header_and_footer_tailwind_css.png" alt="">
+                    <a href="https://codepen.io/robstinson/pen/bGpxzeK/?ref=headwind.robstinson" target="_blank"  class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See the Snippet</a>
                 </div>
                 <div class="flex flex-col items-center justify-between p-6 bg-white">
                     <h4 class="text-lg font-medium">Calendar View - Month</h4>
-                    <div>
-                        <!-- Component Start -->
-                        <div class="relative flex flex-col items-center group">
-                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
-                            </svg>
-                            <div class="absolute top-0 flex flex-col items-center hidden mt-6 group-hover:flex">
-                                <div class="w-3 h-3 -mb-2 rotate-45 bg-black"></div>
-                                <span class="relative z-10 p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg">A bottom aligned tooltip.</span>
-                            </div>
-                        </div>
-                        <!-- Component End  -->
-                    </div>
-                    <button class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See more</button>
+                    <img class="w-4/6 my-2" src="headwind_calendar_month_view_tailwind_css.png" alt="">
+                    <a href="https://codepen.io/robstinson/pen/BaKOZry/?ref=headwind.robstinson" target="_blank"  class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See the Snippet</a>
+                </div>
+                <div class="flex flex-col items-center justify-between p-6 bg-white">
+                    <h4 class="text-lg font-medium">Mega Menu</h4>
+                    <img class="w-4/6 my-2" src="headwind_mega_menu_tailwind_css.png" alt="">
+                    <a href="https://codepen.io/robstinson/pen/LYNJvzK/?ref=headwind.robstinson" target="_blank"  class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See the Snippet</a>
+                </div>
+                <div class="flex flex-col items-center justify-center p-6 bg-white">
+                    <h4 class="text-lg italic">More soon…</h4>
                 </div>
             </div>
         </div>
