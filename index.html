@@ -22,37 +22,37 @@
             }
         </style>
     </head>
-    <body class="pb-24">
+    <body class="pb-24 text-black">
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRHB5XM"
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- End Google Tag Manager (noscript) -->
-        <div class="flex flex-col items-center justify-center max-w-full lg:prose-xl md:prose-lg prose">
-            <div class="max-w-screen-md lg:pt-32 md:pt-20 pt-10 px-10">
-                <img class="h-8" src="lofiui_logo.svg" alt="lofiui Logo">
-                <h1 class="font-black">Low-fidelity Tailwind CSS components.</h1>
-                <p class="text-lg italic text-gray-600">lofiui. You know… like a headstart on tailwind!</p>
+        <div class="flex flex-col items-center justify-center max-w-full">
+            <div class="flex justify-between w-full max-w-screen-md lg:pt-32 md:pt-20 pt-10 px-10">
+                <img class="h-12 my-0" src="lofiui_logo.svg" alt="lofiui Logo">
+                <a class="text-sm font-semibold underline" href="https://twitter.com/lofiui" target="_blank">Follow @lofiui on Twitter</a>
             </div>
-            <div class="max-w-screen-md mt-12 px-10">
-                <p>I'd heard a lot about utility class CSS over the years, but it wasn't until I started playing with Tailwind CSS did I fully realise how simple and scalable a methodology it was.</p>
-                <p>lofiui is my love-letter to Tailwind and other frontend devs like me. It is intentionally utilitarian and the components it includes are built to demo efficient HTML structure and a functional use of Tailwind. You may use these components as a starting point for your own components and then apply all your own amazing style and design on top.</p>
+            <div class="max-w-screen-md px-10 mt-20 lg:prose-xl md:prose-lg prose">
+                <h1 class="text-black">Low-fidelity Tailwind CSS components.</h1>
+                <p>I'd heard a lot about utility class CSS over the years, but it wasn't until I started playing with Tailwind CSS did I fully realise how simple and scalable it could be.</p>
+                <p>Lofi UI is my love-letter to Tailwind and other frontend devs like me. It is intentionally utilitarian and the components it includes are built to demo efficient HTML structure and a functional use of Tailwind. You may use these components as a starting point for your own components and then apply all your own amazing style and design on top.</p>
                 <p>All components adhere to 3 rules. These rules are designed to make the components as simple and accessible as possible.</p>
                 <ol>
-                    <li><span class="font-semibold">Just the CDN</span> - No custom classes or stlying. Just vanilla Tailwind.</li>
+                    <li><span class="font-semibold">Just the CDN</span> - As close as possible to vanilla Tailwind.</li>
                     <li><span class="font-semibold">NO JS</span> - That way you can use whatever JS library or framework you prefer.</li>
                     <li><span class="font-semibold">Minimal Styling</span> - Just enough styling to make sense. No more.</li>
                 </ol>
-                <p>When you need a component to function in a particular way and be based on efficient use of HTML and Tailwind classes, I hope lofiui can help you out.</p>
+                <p>When you need a component to function in a particular way and be based on efficient use of HTML and Tailwind classes, I hope Lofi UI can help you out.</p>
                 <p>Cheers!</p>
                 <p>Rob</p>
-                <div class="flex justify-center mt-24 space-x-2">
+                <div class="flex justify-center mt-16 space-x-2">
                     <div class="w-2 h-2 bg-black rounded-full"></div>
                     <div class="w-2 h-2 bg-black rounded-full"></div>
                     <div class="w-2 h-2 bg-black rounded-full"></div>
                 </div>
             </div>
         </div>
-        <div class="flex justify-center mt-10 prose-xl">
+        <div class="flex justify-center mt-6 prose-xl">
             <div class="w-full max-w-screen-md">
                 <h2 class="text-xl font-medium text-center">Components</h2>
             </div>
@@ -131,22 +131,126 @@
                 </div>
                 <div class="flex flex-col items-center justify-between p-6 bg-white">
                     <h4 class="text-lg font-medium">Kanban View</h4>
-                    <img class="w-4/6 my-2" src="lofiui_kanban_tailwind_css.png" alt="">
+                    <div class="flex w-full space-x-2 p-8 items-stretch">
+                        <div class="w-1/3 border border-black">
+                            <div class="h-4 bg-black"></div>
+                            <div class="flex flex-col p-2 space-y-2">
+                                <div class="h-8 border border-black"></div>
+                                <div class="h-8 border border-black"></div>
+                                <div class="h-8 border border-black"></div>
+                                <div class="h-8 border border-black"></div>
+                            </div>
+                        </div>    
+                        <div class="w-1/3 border border-black">
+                            <div class="h-4 bg-black"></div>
+                            <div class="flex flex-col p-2 space-y-2">
+                                <div class="h-8 border border-black"></div>
+                                <div class="h-8 border border-black"></div>
+                                <div class="h-8 border border-black"></div>
+                            </div>
+                        </div>    
+                        <div class="w-1/3 border border-black">
+                            <div class="h-4 bg-black"></div>
+                            <div class="flex flex-col p-2 space-y-2">
+                                <div class="h-8 border border-black"></div>
+                                <div class="h-8 border border-black"></div>
+                            </div>
+                        </div> 
+                    </div>
                     <a href="https://codepen.io/robstinson/pen/PoNdjOM/?ref=lofiui.robstinson" target="_blank"  class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See the Snippet</a>
                 </div>
                 <div class="flex flex-col items-center justify-between p-6 bg-white">
                     <h4 class="text-lg font-medium">Table View</h4>
-                    <img class="w-4/6 my-2" src="lofiui_table_fixed_header_and_footer_tailwind_css.png" alt="">
+                    
+                    <div class="w-full space-x-2 p-8">
+                        <div class="w-full border border-black">
+                            <div class="h-6 bg-black"></div>
+                            <div class="h-6 border-b border-black"></div>
+                            <div class="h-6 border-b border-black"></div>
+                            <div class="h-6 border-b border-black"></div>
+                            <div class="h-6 border-b border-black"></div>
+                            <div class="h-6 border-b border-black"></div>
+                            <div class="h-6"></div>                            
+                        </div> 
+                    </div>
                     <a href="https://codepen.io/robstinson/pen/bGpxzeK/?ref=lofiui.robstinson" target="_blank"  class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See the Snippet</a>
                 </div>
-                <div class="flex flex-col items-center justify-between p-6 bg-white">
+                <div class="flex flex-col items-center justify-between p-6 bg-white h-full">
                     <h4 class="text-lg font-medium">Calendar View - Month</h4>
-                    <img class="w-4/6 my-2" src="lofiui_calendar_month_view_tailwind_css.png" alt="">
+                    <div class="flex flex-grow w-full space-x-2 p-8">
+                        <div class="flex-grow grid grid-cols-7 gap-px bg-black border-t border-l border-b border-black">
+                             <div class="bg-black"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                             <div class="bg-white"></div>           
+                        </div> 
+                    </div>
                     <a href="https://codepen.io/robstinson/pen/BaKOZry/?ref=lofiui.robstinson" target="_blank"  class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See the Snippet</a>
                 </div>
                 <div class="flex flex-col items-center justify-between p-6 bg-white">
                     <h4 class="text-lg font-medium">Mega Menu</h4>
-                    <img class="w-4/6 my-2" src="lofiui_mega_menu_tailwind_css.png" alt="">
+                    <div class="flex flex-col items-center flex-grow w-full p-8">
+                        <div class="flex items-center justify-center h-6 border-b border-black w-full">
+                            <a class=" flex items-center text-xs mx-2" href="#">Mega
+                                <svg class="h-3 w-3 mt-px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="w-3/4 border-l border-b border-r border-black shadow-lg">
+                            <div class="grid grid-cols-2">
+                                <a class="flex items-center px-3 py-3" href="#">
+                                    <span class="h-2 w-2 bg-black rounded-full"></span>
+                                    <span class="text-xs pl-1">Menu Item</span>
+                                </a>
+                                <a class="flex items-center px-3 py-3" href="#">
+                                    <span class="h-2 w-2 bg-black rounded-full"></span>
+                                    <span class="text-xs pl-1">Menu Item</span>
+                                </a>
+                                <a class="flex items-center px-3 py-3" href="#">
+                                    <span class="h-2 w-2 bg-black rounded-full"></span>
+                                    <span class="text-xs pl-1">Menu Item</span>
+                                </a>
+                                <a class="flex items-center px-3 py-3" href="#">
+                                    <span class="h-2 w-2 bg-black rounded-full"></span>
+                                    <span class="text-xs pl-1">Menu Item</span>
+                                </a>
+                                <a class="flex items-center col-span-2 border-t border-black px-3 py-3" href="#">
+                                    <span class="h-2 w-2 bg-black rounded-full"></span>
+                                    <span class="text-xs pl-1">Menu Item</span>
+                                    <button class="ml-auto text-xs px-2 py-1 leading-none border border-black">Button</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="https://codepen.io/robstinson/pen/LYNJvzK/?ref=lofiui.robstinson" target="_blank"  class="flex items-center h-8 px-3 text-sm text-gray-700 bg-gray-200 hover:bg-gray-300">See the Snippet</a>
                 </div>
                 <div class="flex flex-col items-center justify-center p-6 bg-white">
@@ -154,7 +258,8 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center px-10 mt-20 w-full">
+        <div class="flex flex-col items-center px-10 mt-20">
+            <h3 class="text-lg text-black mt-10 mb-4">Subscribe to my newsletter and get notified on future lofi ui snippets and news.</h3>
             <script async data-uid="249bcacc6d" src="https://rob-stinson.ck.page/249bcacc6d/index.js"></script>
         </div>
     </body>
